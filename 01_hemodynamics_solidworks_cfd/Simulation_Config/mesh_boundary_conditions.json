@@ -1,0 +1,31 @@
+{
+  "simulation_environment": "SOLIDWORKS Flow Simulation",
+  "computational_domain": {
+    "type": "Internal CFD",
+    "fluid": "Non-Newtonian Blood (Carreau-Yasuda)",
+    "geometry": "3D Bifurcated Arterial Branching Vessel (Main Trunk + 2 Daughter Branches)",
+    "wall_condition": "No-slip, rigid stationary vessel boundary"
+  },
+  "inlet_boundary_conditions": {
+    "profile": "Laminar fully-developed parabolic profile",
+    "peak_velocity_m_per_s": 0.828,
+    "fluid_temperature_c": 37.0
+  },
+  "outlet_boundary_conditions": {
+    "outlet_1_pressure_kpa": 101.59,
+    "outlet_2_pressure_kpa": 100.96,
+    "pressure_loss_gradient_kpa": 0.63
+  },
+  "discrete_particle_transport_study": {
+    "particle_count": 80,
+    "particle_type": "Solid Erythrocyte Analog (Spherical)",
+    "boundary_interaction": "Reflection",
+    "analysis": "Quantification of blood particle recirculation zones and localized stagnation points"
+  },
+  "flow_trajectories": {
+    "trajectory_count": 100,
+    "visualization_style": "100-Pipe streamline ribbons",
+    "peak_wall_shear_stress_pa": 59.55
+  }
+}
+

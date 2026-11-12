@@ -1,0 +1,33 @@
+{
+  "simulation_environment": "COMSOL Multiphysics 6.x",
+  "physics_interface": "Electric Currents (ec) / AC/DC Module",
+  "biological_tissue": {
+    "domain_name": "Human Cardiac Myocardium (Ventricular Wall)",
+    "electrical_conductivity_S_per_m": 0.4,
+    "relative_permittivity": 100000.0,
+    "mass_density_kg_per_m3": 1055.0,
+    "dielectric_loss_model": "Low-frequency dispersion"
+  },
+  "pacemaker_lead_geometry": {
+    "type": "Bipolar Transvenous Endocardial Cardiac Lead",
+    "cathode_tip": {
+      "geometry": "Hemispherical active pacing electrode",
+      "radius_mm": 1.0,
+      "applied_electric_potential_v": 1.0,
+      "material": "Platinum-Iridium (Pt-Ir 90/10)"
+    },
+    "anode_ring": {
+      "geometry": "Cylindrical return ring electrode",
+      "inter_electrode_spacing_mm": 10.0,
+      "applied_electric_potential_v": 0.0,
+      "material": "Platinum-Iridium (Pt-Ir 90/10)"
+    },
+    "lead_insulating_body": {
+      "material": "Biostable Medical Grade Polyurethane (TPU 80A)",
+      "electrical_conductivity_S_per_m": 1.0e-12
+    }
+  },
+  "study_type": "Stationary 3D Finite Element Analysis (FEA)",
+  "mesh_element_type": "Free Tetrahedral with Boundary Layer Refinement at Electrode Interfaces"
+}
+

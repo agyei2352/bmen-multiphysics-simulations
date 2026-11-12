@@ -1,0 +1,40 @@
+# SolidWorks Flow Simulation large temp/mesh files
+*.csw
+*.stdout
+*.stderr
+*.fld
+*.r_sp
+*.scr
+*.msh
+*.sol
+*.csw.bak
+*.flo
+
+# SolidWorks Lock & Backup Files
+~$*
+*.bak
+*.swp
+*.dump
+
+# COMSOL Multiphysics Temporary & Recovery Files
+*.recovery/
+*.recovery
+*.lock
+*.mph.bak
+*.mph.temp
+
+# MATLAB autosaves
+*.asv
+*.mat.bak
+
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor Files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+

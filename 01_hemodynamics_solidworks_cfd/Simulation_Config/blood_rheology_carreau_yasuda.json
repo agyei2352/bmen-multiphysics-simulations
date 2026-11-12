@@ -1,0 +1,16 @@
+{
+  "fluid_name": "Human Blood (Non-Newtonian Rheological Model)",
+  "rheology_model": "Carreau-Yasuda",
+  "density_kg_per_m3": 1060.0,
+  "parameters": {
+    "zero_shear_viscosity_pa_s": 0.056,
+    "infinite_shear_viscosity_pa_s": 0.00345,
+    "relaxation_time_lambda_s": 3.313,
+    "power_law_index_n": 0.3568,
+    "transition_parameter_a": 2.0
+  },
+  "physiological_temperature_c": 37.0,
+  "flow_regime": "Laminar Internal Flow (Re < 2300)",
+  "clinical_significance": "Accounts for shear-thinning behavior in branched coronary/femoral arteries where red blood cell rouleaux disaggregate under high shear rates (>100 s^-1)."
+}
+
